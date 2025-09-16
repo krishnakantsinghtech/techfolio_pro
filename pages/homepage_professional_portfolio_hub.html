@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Chen - Full-Stack Developer | TechFolio Pro</title>
+    <meta name="description" content="Full-Stack Developer building elegant solutions for complex problems. Explore my portfolio of innovative web applications and technical expertise." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ftechfolio3320back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-white text-text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 nav-modern z-50">
+        <div class="container-custom">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-accent to-violet-500 rounded-lg flex items-center justify-center modern-glow">
+                        <span class="text-white font-bold text-sm">AC</span>
+                    </div>
+                    <span class="font-semibold text-lg text-text-primary">TechFolio Pro</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_professional_portfolio_hub.html" class="text-accent font-medium border-b-2 border-accent">Portfolio</a>
+                    <a href="tools_innovation_lab.html" class="text-text-secondary hover:text-accent transition-colors modern-hover px-2 py-1 rounded">Tools</a>
+                    <a href="project_case_studies.html" class="text-text-secondary hover:text-accent transition-colors modern-hover px-2 py-1 rounded">Projects</a>
+                    <a href="professional_contact_collaboration.html" class="text-text-secondary hover:text-accent transition-colors modern-hover px-2 py-1 rounded">Contact</a>
+                    <a href="professional_contact_collaboration.html" class="btn-modern">Let's Build Something</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 rounded-lg hover:bg-secondary-100 transition-colors" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="py-4 space-y-4 border-t border-secondary-200">
+                    <a href="homepage_professional_portfolio_hub.html" class="block text-accent font-medium">Portfolio</a>
+                    <a href="tools_innovation_lab.html" class="block text-text-secondary hover:text-accent transition-colors">Tools</a>
+                    <a href="project_case_studies.html" class="block text-text-secondary hover:text-accent transition-colors">Projects</a>
+                    <a href="professional_contact_collaboration.html" class="block text-text-secondary hover:text-accent transition-colors">Contact</a>
+                    <a href="professional_contact_collaboration.html" class="btn-modern w-full text-center mt-4">Let's Build Something</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-white via-accent-50/30 to-violet-50/30 relative overflow-hidden">
+        <!-- Background Decoration -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-accent/10 to-violet/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-pink/10 to-cyan/10 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container-custom relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="space-y-8 animate-fade-in">
+                    <div class="space-y-4">
+                        <h1 class="text-4xl lg:text-5xl font-bold text-text-primary leading-tight">
+                            Full-Stack Developer Building 
+                            <span class="text-gradient-modern animate-gradient">Elegant Solutions</span> 
+                            for Complex Problems
+                        </h1>
+                        <p class="text-xl text-text-secondary leading-relaxed">
+                            Crafting scalable web applications with clean code, thoughtful architecture, and user-centered design. 
+                            Passionate about turning complex challenges into intuitive digital experiences.
+                        </p>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="project_case_studies.html" class="btn-modern modern-active">View My Work</a>
+                        <a href="tools_innovation_lab.html" class="btn-secondary modern-active">Explore Tools</a>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="flex items-center space-x-8 pt-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-gradient-modern">50+</div>
+                            <div class="text-sm text-text-secondary">Projects Delivered</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-gradient-modern">5+</div>
+                            <div class="text-sm text-text-secondary">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-gradient-modern">15+</div>
+                            <div class="text-sm text-text-secondary">Technologies</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="relative animate-fade-in animation-delay-200">
+                    <div class="relative z-10">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Alex Chen - Professional Developer" class="w-full max-w-md mx-auto rounded-2xl modern-glow object-cover aspect-square transition-transform duration-500 hover:scale-105" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <!-- Enhanced Background Decoration -->
+                    <div class="absolute -top-4 -right-4 w-full h-full bg-gradient-to-r from-accent/20 via-violet/20 to-pink/20 rounded-2xl -z-10 blur-sm"></div>
+                    <div class="absolute -top-8 -right-8 w-full h-full bg-gradient-to-r from-cyan/10 to-accent/10 rounded-2xl -z-20"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Matrix Section -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-text-primary mb-4">Technical Expertise</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    A comprehensive toolkit built through years of hands-on development and continuous learning
+                </p>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend Development -->
+                <div class="card-glass p-6 hover-lift group modern-glow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-accent/20 to-violet/20 rounded-lg flex items-center justify-center mr-4 modern-glow">
+                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text-primary">Frontend Development</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-secondary">React & Next.js</span>
+                            <div class="skill-bar-modern w-20">
+                                <div class="skill-progress-modern w-5/6 bg-gradient-to-r from-accent to-violet-500"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-secondary">TypeScript</span>
+                            <div class="skill-bar-modern w-20">
+                                <div class="skill-progress-modern w-4/5 bg-gradient-to-r from-violet-500 to-pink-500"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-secondary">Tailwind CSS</span>
+                            <div class="skill-bar-modern w-20">
+                                <div class="skill-progress-modern w-full bg-gradient-to-r from-pink-500 to-cyan-500"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-sm text-text-secondary">Recent: E-commerce platform with 50k+ users</p>
+                    </div>
+                </div>
+
+                <!-- Backend Development -->
+                <div class="card-glass p-6 hover-lift group modern-glow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-success/20 to-cyan/20 rounded-lg flex items-center justify-center mr-4 modern-glow">
+                            <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text-primary">Backend Development</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-secondary">Node.js & Express</span>
+                            <div class="skill-bar-modern w-20">
+                                <div class="skill-progress-modern w-5/6 bg-gradient-to-r from-success to-cyan-500"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-secondary">Python & Django</span>
+                            <div class="skill-bar-modern w-20">
+                                <div class="skill-progress-modern w-4/5 bg-gradient-to-r from-cyan-500 to-accent"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-secondary">PostgreSQL</span>
+                            <div class="skill-bar-modern w-20">
+                                <div class="skill-progress-modern w-5/6 bg-gradient-to-r from-accent to-success"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-sm text-text-secondary">Recent: Microservices architecture for fintech app</p>
+                    </div>
+                </div>
+
+                <!-- DevOps & Cloud -->
+                <div class="card-glass p-6 hover-lift group modern-glow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-warning/20 to-pink/20 rounded-lg flex items-center justify-center mr-4 modern-glow">
+                            <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text-primary">DevOps & Cloud</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-secondary">AWS & Docker</span>
+                            <div class="skill-bar-modern w-20">
+                                <div class="skill-progress-modern w-4/5 bg-gradient-to-r from-warning to-pink-500"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-secondary">CI/CD Pipelines</span>
+                            <div class="skill-bar-modern w-20">
+                                <div class="skill-progress-modern w-3/4 bg-gradient-to-r from-pink-500 to-violet-500"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-secondary">Kubernetes</span>
+                            <div class="skill-bar-modern w-20">
+                                <div class="skill-progress-modern w-2/3 bg-gradient-to-r from-violet-500 to-warning"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-sm text-text-secondary">Recent: Auto-scaling infrastructure for SaaS platform</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section-padding section-modern-light">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-text-primary mb-4">Featured Projects</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Solving real-world problems through thoughtful design and robust engineering
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card-modern">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EcoTrack Analytics Dashboard" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4 bg-gradient-to-r from-accent to-violet-500 text-white px-3 py-1 rounded-full text-xs font-medium modern-glow">
+                            Web App
+                        </div>
+                        <!-- Gradient Overlay on Hover -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">EcoTrack Analytics</h3>
+                        <p class="text-text-secondary mb-4">
+                            Real-time environmental data visualization platform helping organizations track and reduce their carbon footprint through actionable insights.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gradient-to-r from-accent/10 to-violet/10 text-accent text-xs rounded-full border border-accent/20">React</span>
+                            <span class="px-2 py-1 bg-gradient-to-r from-violet/10 to-pink/10 text-violet-600 text-xs rounded-full border border-violet/20">D3.js</span>
+                            <span class="px-2 py-1 bg-gradient-to-r from-pink/10 to-cyan/10 text-pink-600 text-xs rounded-full border border-pink/20">Node.js</span>
+                        </div>
+                        <a href="project_case_studies.html" class="text-gradient-modern font-medium hover:underline transition-all duration-200">
+                            View Case Study →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card-modern">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="FinanceFlow Mobile App" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4 bg-gradient-to-r from-success to-cyan-500 text-white px-3 py-1 rounded-full text-xs font-medium modern-glow">
+                            Mobile App
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-success/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">FinanceFlow</h3>
+                        <p class="text-text-secondary mb-4">
+                            Intelligent personal finance management app with AI-powered spending insights and automated budget optimization for 10,000+ active users.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gradient-to-r from-success/10 to-cyan/10 text-success text-xs rounded-full border border-success/20">React Native</span>
+                            <span class="px-2 py-1 bg-gradient-to-r from-cyan/10 to-accent/10 text-cyan-600 text-xs rounded-full border border-cyan/20">Python</span>
+                            <span class="px-2 py-1 bg-gradient-to-r from-accent/10 to-violet/10 text-accent text-xs rounded-full border border-accent/20">ML</span>
+                        </div>
+                        <a href="project_case_studies.html" class="text-gradient-modern font-medium hover:underline transition-all duration-200">
+                            View Case Study →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card-modern">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.pixabay.com/photos/2016/11/30/20/58/programming-1873854_1280.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="DevTools Suite" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4 bg-gradient-to-r from-warning to-pink-500 text-white px-3 py-1 rounded-full text-xs font-medium modern-glow">
+                            Open Source
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-warning/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">DevTools Suite</h3>
+                        <p class="text-text-secondary mb-4">
+                            Collection of developer productivity tools including API testing, code formatting, and deployment automation used by 500+ developers.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gradient-to-r from-warning/10 to-pink/10 text-warning text-xs rounded-full border border-warning/20">TypeScript</span>
+                            <span class="px-2 py-1 bg-gradient-to-r from-pink/10 to-violet/10 text-pink-600 text-xs rounded-full border border-pink/20">Electron</span>
+                            <span class="px-2 py-1 bg-gradient-to-r from-violet/10 to-cyan/10 text-violet-600 text-xs rounded-full border border-violet/20">CLI</span>
+                        </div>
+                        <a href="tools_innovation_lab.html" class="text-gradient-modern font-medium hover:underline transition-all duration-200">
+                            Explore Tools →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="project_case_studies.html" class="btn-secondary modern-active">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Integration Section -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-text-primary mb-4">Active Development</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Continuous learning and contribution to the developer community
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Contribution Stats -->
+                <div class="text-center card-glass p-6 modern-glow">
+                    <div class="w-16 h-16 bg-gradient-to-r from-accent/20 to-violet/20 rounded-full flex items-center justify-center mx-auto mb-4 modern-glow">
+                        <svg class="w-8 h-8 text-gradient-modern" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <div class="text-2xl font-bold text-gradient-modern">1,247</div>
+                    <div class="text-sm text-text-secondary">Contributions This Year</div>
+                </div>
+
+                <div class="text-center card-glass p-6 modern-glow">
+                    <div class="w-16 h-16 bg-gradient-to-r from-success/20 to-cyan/20 rounded-full flex items-center justify-center mx-auto mb-4 modern-glow">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <div class="text-2xl font-bold text-gradient-modern">42</div>
+                    <div class="text-sm text-text-secondary">Public Repositories</div>
+                </div>
+
+                <div class="text-center card-glass p-6 modern-glow">
+                    <div class="w-16 h-16 bg-gradient-to-r from-warning/20 to-pink/20 rounded-full flex items-center justify-center mx-auto mb-4 modern-glow">
+                        <svg class="w-8 h-8 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 12l-2 2 4 4 8-8-2-2-6 6z"/>
+                        </svg>
+                    </div>
+                    <div class="text-2xl font-bold text-gradient-modern">156</div>
+                    <div class="text-sm text-text-secondary">Stars Earned</div>
+                </div>
+
+                <div class="text-center card-glass p-6 modern-glow">
+                    <div class="w-16 h-16 bg-gradient-to-r from-error/20 to-pink/20 rounded-full flex items-center justify-center mx-auto mb-4 modern-glow">
+                        <svg class="w-8 h-8 text-error" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm-1 16H9V7h9v14z"/>
+                        </svg>
+                    </div>
+                    <div class="text-2xl font-bold text-gradient-modern">23</div>
+                    <div class="text-sm text-text-secondary">Open Source Contributions</div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="mt-12 max-w-4xl mx-auto">
+                <h3 class="text-xl font-semibold text-text-primary mb-6 text-center">Recent Activity</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center p-6 card-glass rounded-lg modern-glow group hover:scale-105 transition-transform duration-300">
+                        <div class="w-3 h-3 bg-gradient-to-r from-success to-cyan-500 rounded-full mr-4 flex-shrink-0 modern-glow"></div>
+                        <div class="flex-1">
+                            <div class="font-medium text-text-primary">Pushed to techfolio-pro/portfolio-website</div>
+                            <div class="text-sm text-text-secondary">Added responsive design improvements and accessibility features</div>
+                        </div>
+                        <div class="text-sm text-text-tertiary">2 hours ago</div>
+                    </div>
+                    <div class="flex items-center p-6 card-glass rounded-lg modern-glow group hover:scale-105 transition-transform duration-300">
+                        <div class="w-3 h-3 bg-gradient-to-r from-accent to-violet-500 rounded-full mr-4 flex-shrink-0 modern-glow"></div>
+                        <div class="flex-1">
+                            <div class="font-medium text-text-primary">Created new repository: react-performance-toolkit</div>
+                            <div class="text-sm text-text-secondary">Performance optimization utilities for React applications</div>
+                        </div>
+                        <div class="text-sm text-text-tertiary">1 day ago</div>
+                    </div>
+                    <div class="flex items-center p-6 card-glass rounded-lg modern-glow group hover:scale-105 transition-transform duration-300">
+                        <div class="w-3 h-3 bg-gradient-to-r from-warning to-pink-500 rounded-full mr-4 flex-shrink-0 modern-glow"></div>
+                        <div class="flex-1">
+                            <div class="font-medium text-text-primary">Contributed to open-source/awesome-dev-tools</div>
+                            <div class="text-sm text-text-secondary">Added comprehensive testing utilities section</div>
+                        </div>
+                        <div class="text-sm text-text-tertiary">3 days ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Journey Timeline -->
+    <section class="section-padding section-modern-light">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-text-primary mb-4">Professional Journey</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    A path of continuous growth, learning, and technical evolution
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="timeline-modern">
+                    <!-- Timeline Items -->
+                    <div class="space-y-12">
+                        <!-- Current Position -->
+                        <div class="relative flex items-start">
+                            <div class="timeline-dot-modern from-accent to-violet-500 shadow-lg"></div>
+                            <div class="ml-20">
+                                <div class="flex items-center mb-2">
+                                    <h3 class="text-xl font-semibold text-text-primary">Senior Full-Stack Developer</h3>
+                                    <span class="ml-4 px-3 py-1 bg-gradient-to-r from-accent/20 to-violet/20 text-accent text-sm rounded-full border border-accent/30 modern-glow">Current</span>
+                                </div>
+                                <div class="text-text-secondary mb-2">TechFlow Solutions • 2022 - Present</div>
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Leading development of scalable web applications serving 100k+ users. Architected microservices infrastructure 
+                                    reducing system latency by 40%. Mentoring junior developers and establishing coding standards.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-gradient-to-r from-accent/10 to-violet/10 text-accent text-xs rounded-full border border-accent/20">React</span>
+                                    <span class="px-2 py-1 bg-gradient-to-r from-violet/10 to-pink/10 text-violet-600 text-xs rounded-full border border-violet/20">Node.js</span>
+                                    <span class="px-2 py-1 bg-gradient-to-r from-pink/10 to-cyan/10 text-pink-600 text-xs rounded-full border border-pink/20">AWS</span>
+                                    <span class="px-2 py-1 bg-gradient-to-r from-cyan/10 to-success/10 text-cyan-600 text-xs rounded-full border border-cyan/20">Docker</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Previous Position -->
+                        <div class="relative flex items-start">
+                            <div class="timeline-dot-modern from-success to-cyan-500 shadow-lg"></div>
+                            <div class="ml-20">
+                                <h3 class="text-xl font-semibold text-text-primary mb-2">Full-Stack Developer</h3>
+                                <div class="text-text-secondary mb-2">StartupLab Inc • 2020 - 2022</div>
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Built MVP products from concept to launch for multiple startups. Developed real-time collaboration tools 
+                                    and payment processing systems. Improved application performance by 60% through optimization.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-gradient-to-r from-success/10 to-cyan/10 text-success text-xs rounded-full border border-success/20">Vue.js</span>
+                                    <span class="px-2 py-1 bg-gradient-to-r from-cyan/10 to-accent/10 text-cyan-600 text-xs rounded-full border border-cyan/20">Python</span>
+                                    <span class="px-2 py-1 bg-gradient-to-r from-accent/10 to-violet/10 text-accent text-xs rounded-full border border-accent/20">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Early Career -->
+                        <div class="relative flex items-start">
+                            <div class="timeline-dot-modern from-warning to-pink-500 shadow-lg"></div>
+                            <div class="ml-20">
+                                <h3 class="text-xl font-semibold text-text-primary mb-2">Frontend Developer</h3>
+                                <div class="text-text-secondary mb-2">WebCraft Agency • 2019 - 2020</div>
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Specialized in creating responsive, accessible web interfaces for diverse clients. 
+                                    Collaborated with designers to implement pixel-perfect designs and smooth user experiences.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-gradient-to-r from-warning/10 to-pink/10 text-warning text-xs rounded-full border border-warning/20">JavaScript</span>
+                                    <span class="px-2 py-1 bg-gradient-to-r from-pink/10 to-violet/10 text-pink-600 text-xs rounded-full border border-pink/20">SASS</span>
+                                    <span class="px-2 py-1 bg-gradient-to-r from-violet/10 to-cyan/10 text-violet-600 text-xs rounded-full border border-violet/20">jQuery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Ecosystem -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-text-primary mb-4">Let's Build Something Amazing</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Ready to turn your ideas into reality? Let's discuss your next project and create something extraordinary together.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Project Inquiry -->
+                <div class="text-center p-8 card-glass hover-lift modern-glow">
+                    <div class="w-16 h-16 bg-gradient-to-r from-accent/20 to-violet/20 rounded-full flex items-center justify-center mx-auto mb-4 modern-glow">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Project Discussion</h3>
+                    <p class="text-text-secondary mb-4">Have a project in mind? Let's discuss your requirements and explore possibilities.</p>
+                    <a href="professional_contact_collaboration.html" class="btn-modern modern-active">Start a Project</a>
+                </div>
+
+                <!-- Collaboration -->
+                <div class="text-center p-8 card-glass hover-lift modern-glow">
+                    <div class="w-16 h-16 bg-gradient-to-r from-success/20 to-cyan/20 rounded-full flex items-center justify-center mx-auto mb-4 modern-glow">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Collaboration</h3>
+                    <p class="text-text-secondary mb-4">Interested in collaborating on open source projects or technical initiatives?</p>
+                    <a href="professional_contact_collaboration.html" class="btn-secondary modern-active">Let's Collaborate</a>
+                </div>
+
+                <!-- Technical Insights -->
+                <div class="text-center p-8 card-glass hover-lift modern-glow">
+                    <div class="w-16 h-16 bg-gradient-to-r from-warning/20 to-pink/20 rounded-full flex items-center justify-center mx-auto mb-4 modern-glow">
+                        <svg class="w-8 h-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Technical Insights</h3>
+                    <p class="text-text-secondary mb-4">Stay updated with my latest technical articles, tutorials, and development insights.</p>
+                    <a href="javascript:void(0)" class="btn-secondary modern-active">Subscribe to Newsletter</a>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex justify-center space-x-6 mt-12">
+                <a href="javascript:void(0)" class="w-12 h-12 bg-gradient-to-r from-secondary-100 to-accent/10 hover:from-accent hover:to-violet-500 hover:text-white rounded-full flex items-center justify-center transition-all duration-300 modern-glow modern-active">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="javascript:void(0)" class="w-12 h-12 bg-gradient-to-r from-secondary-100 to-success/10 hover:from-success hover:to-cyan-500 hover:text-white rounded-full flex items-center justify-center transition-all duration-300 modern-glow modern-active">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="javascript:void(0)" class="w-12 h-12 bg-gradient-to-r from-secondary-100 to-warning/10 hover:from-warning hover:to-pink-500 hover:text-white rounded-full flex items-center justify-center transition-all duration-300 modern-glow modern-active">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-primary-800 via-primary-900 to-slate-900 text-white py-12">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-accent to-violet-500 rounded-lg flex items-center justify-center modern-glow">
+                            <span class="text-white font-bold text-sm">AC</span>
+                        </div>
+                        <span class="font-semibold text-lg">TechFolio Pro</span>
+                    </div>
+                    <p class="text-secondary-300 leading-relaxed max-w-md">
+                        Building elegant solutions for complex problems through clean code, thoughtful architecture, and user-centered design.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4 text-gradient-modern">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="homepage_professional_portfolio_hub.html" class="block text-secondary-300 hover:text-gradient-modern transition-colors">Portfolio</a>
+                        <a href="tools_innovation_lab.html" class="block text-secondary-300 hover:text-gradient-modern transition-colors">Tools</a>
+                        <a href="project_case_studies.html" class="block text-secondary-300 hover:text-gradient-modern transition-colors">Projects</a>
+                        <a href="professional_contact_collaboration.html" class="block text-secondary-300 hover:text-gradient-modern transition-colors">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold mb-4 text-gradient-modern">Get in Touch</h4>
+                    <div class="space-y-2 text-secondary-300">
+                        <div class="hover:text-white transition-colors">alex.chen@techfolio.dev</div>
+                        <div class="hover:text-white transition-colors">San Francisco, CA</div>
+                        <div class="hover:text-white transition-colors">Available for projects</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gradient-to-r from-secondary-700 via-accent/20 to-violet/20 mt-8 pt-8 text-center text-secondary-300">
+                <p>&copy; 2025 TechFolio Pro. All rights reserved. Built with passion and clean code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-card');
+            } else {
+                nav.classList.remove('shadow-card');
+            }
+        });
+
+        // Enhanced animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.animate-fade-in, .card-interactive, .card-glass').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

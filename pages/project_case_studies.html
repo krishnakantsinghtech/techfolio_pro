@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Case Studies - Technical Deep Dives | TechFolio Pro</title>
+    <meta name="description" content="Comprehensive technical documentation and case studies showcasing problem-solving methodology, implementation details, and measurable outcomes across diverse projects." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ftechfolio3320back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-white text-text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-secondary-200 z-50">
+        <div class="container-custom">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">AC</span>
+                    </div>
+                    <span class="font-semibold text-lg text-text-primary">TechFolio Pro</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_professional_portfolio_hub.html" class="text-text-secondary hover:text-accent transition-colors">Portfolio</a>
+                    <a href="tools_innovation_lab.html" class="text-text-secondary hover:text-accent transition-colors">Tools</a>
+                    <a href="project_case_studies.html" class="text-accent font-medium">Projects</a>
+                    <a href="professional_contact_collaboration.html" class="text-text-secondary hover:text-accent transition-colors">Contact</a>
+                    <a href="professional_contact_collaboration.html" class="btn-primary">Let's Build Something</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="py-4 space-y-4 border-t border-secondary-200">
+                    <a href="homepage_professional_portfolio_hub.html" class="block text-text-secondary hover:text-accent transition-colors">Portfolio</a>
+                    <a href="tools_innovation_lab.html" class="block text-text-secondary hover:text-accent transition-colors">Tools</a>
+                    <a href="project_case_studies.html" class="block text-accent font-medium">Projects</a>
+                    <a href="professional_contact_collaboration.html" class="block text-text-secondary hover:text-accent transition-colors">Contact</a>
+                    <a href="professional_contact_collaboration.html" class="btn-primary w-full text-center mt-4">Let's Build Something</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-surface to-white">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl lg:text-5xl font-bold text-text-primary mb-6">
+                    Project Case Studies
+                </h1>
+                <p class="text-xl text-text-secondary leading-relaxed mb-8">
+                    Deep technical documentation showcasing problem-solving methodology, implementation details, 
+                    and measurable outcomes across diverse projects. Each case study reveals the 'why' behind technical decisions.
+                </p>
+                
+                <!-- Filter Tags -->
+                <div class="flex flex-wrap justify-center gap-3 mb-8">
+                    <button class="px-4 py-2 bg-accent text-white rounded-lg font-medium filter-btn active" data-filter="all">
+                        All Projects
+                    </button>
+                    <button class="px-4 py-2 bg-secondary-100 text-text-secondary rounded-lg font-medium hover:bg-accent hover:text-white transition-all filter-btn" data-filter="web-app">
+                        Web Applications
+                    </button>
+                    <button class="px-4 py-2 bg-secondary-100 text-text-secondary rounded-lg font-medium hover:bg-accent hover:text-white transition-all filter-btn" data-filter="mobile">
+                        Mobile Apps
+                    </button>
+                    <button class="px-4 py-2 bg-secondary-100 text-text-secondary rounded-lg font-medium hover:bg-accent hover:text-white transition-all filter-btn" data-filter="api">
+                        APIs & Backend
+                    </button>
+                    <button class="px-4 py-2 bg-secondary-100 text-text-secondary rounded-lg font-medium hover:bg-accent hover:text-white transition-all filter-btn" data-filter="open-source">
+                        Open Source
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Grid -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-2 gap-12" id="projects-grid">
+                
+                <!-- EcoTrack Analytics Case Study -->
+                <article class="card-interactive overflow-hidden project-item" data-category="web-app">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EcoTrack Analytics Dashboard Interface" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">
+                            Web Application
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded text-sm">
+                            6 months • 2024
+                        </div>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="mb-6">
+                            <h2 class="text-2xl font-bold text-text-primary mb-3">EcoTrack Analytics Platform</h2>
+                            <p class="text-text-secondary leading-relaxed">
+                                Real-time environmental data visualization platform helping organizations track and reduce their carbon footprint through actionable insights and automated reporting.
+                            </p>
+                        </div>
+
+                        <!-- Challenge & Solution Preview -->
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold text-text-primary mb-3">Key Challenge</h3>
+                            <p class="text-text-secondary text-sm leading-relaxed">
+                                Processing 10M+ data points daily from IoT sensors while maintaining real-time dashboard performance and ensuring data accuracy across multiple time zones.
+                            </p>
+                        </div>
+
+                        <!-- Technology Stack -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-text-primary mb-3">Technology Stack</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full">React</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full">TypeScript</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full">D3.js</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full">Node.js</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full">PostgreSQL</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full">Redis</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full">AWS</span>
+                            </div>
+                        </div>
+
+                        <!-- Key Metrics -->
+                        <div class="mb-6 p-4 bg-surface rounded-lg">
+                            <h4 class="text-sm font-semibold text-text-primary mb-3">Impact Metrics</h4>
+                            <div class="grid grid-cols-3 gap-4 text-center">
+                                <div>
+                                    <div class="text-lg font-bold text-accent">40%</div>
+                                    <div class="text-xs text-text-secondary">Faster Processing</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-success">25k+</div>
+                                    <div class="text-xs text-text-secondary">Active Users</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-warning-500">99.9%</div>
+                                    <div class="text-xs text-text-secondary">Uptime</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Expandable Technical Details -->
+                        <div class="border-t border-secondary-200 pt-6">
+                            <button class="w-full text-left expand-btn" data-target="ecotrack-details">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-semibold text-text-primary">Technical Implementation Details</span>
+                                    <svg class="w-5 h-5 text-text-secondary transform transition-transform expand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            
+                            <div class="hidden mt-4 space-y-4 expandable-content" id="ecotrack-details">
+                                <div>
+                                    <h5 class="font-medium text-text-primary mb-2">Architecture Decisions</h5>
+                                    <p class="text-sm text-text-secondary leading-relaxed">
+                                        Implemented microservices architecture with event-driven communication using Redis pub/sub. 
+                                        Data processing pipeline built with Node.js workers handling real-time aggregation and anomaly detection.
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <h5 class="font-medium text-text-primary mb-2">Performance Optimization</h5>
+                                    <div class="bg-primary-50 p-3 rounded text-sm font-mono text-text-primary">
+                                        <div class="text-xs text-text-secondary mb-1">// Optimized data aggregation query</div>
+                                        <div>SELECT date_trunc('hour', timestamp) as hour,</div>
+                                        <div>&nbsp;&nbsp;AVG(co2_level) as avg_co2,</div>
+                                        <div>&nbsp;&nbsp;COUNT(*) as readings</div>
+                                        <div>FROM sensor_data</div>
+                                        <div>WHERE timestamp >= NOW() - INTERVAL '24 hours'</div>
+                                        <div>GROUP BY hour ORDER BY hour;</div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h5 class="font-medium text-text-primary mb-2">Lessons Learned</h5>
+                                    <ul class="text-sm text-text-secondary space-y-1">
+                                        <li>• Database indexing strategy crucial for time-series data performance</li>
+                                        <li>• WebSocket connections require careful memory management at scale</li>
+                                        <li>• User feedback loops essential for dashboard usability</li>
+                                    </ul>
+                                </div>
+
+                                <div class="flex gap-3 pt-2">
+                                    <a href="tools_innovation_lab.html" class="text-accent text-sm font-medium hover:text-accent-700">
+                                        View Live Demo →
+                                    </a>
+                                    <a href="javascript:void(0)" class="text-text-secondary text-sm hover:text-text-primary">
+                                        GitHub Repository →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- FinanceFlow Mobile App Case Study -->
+                <article class="card-interactive overflow-hidden project-item" data-category="mobile">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="FinanceFlow Mobile App Interface" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4 bg-success text-white px-3 py-1 rounded-full text-sm font-medium">
+                            Mobile App
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded text-sm">
+                            8 months • 2023-2024
+                        </div>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="mb-6">
+                            <h2 class="text-2xl font-bold text-text-primary mb-3">FinanceFlow Personal Finance App</h2>
+                            <p class="text-text-secondary leading-relaxed">
+                                Intelligent personal finance management app with AI-powered spending insights and automated budget optimization serving 10,000+ active users.
+                            </p>
+                        </div>
+
+                        <!-- Challenge & Solution Preview -->
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold text-text-primary mb-3">Key Challenge</h3>
+                            <p class="text-text-secondary text-sm leading-relaxed">
+                                Building secure financial data synchronization across multiple banks while maintaining offline functionality and implementing ML-driven spending categorization.
+                            </p>
+                        </div>
+
+                        <!-- Technology Stack -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-text-primary mb-3">Technology Stack</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-success/10 text-success text-xs rounded-full">React Native</span>
+                                <span class="px-3 py-1 bg-success/10 text-success text-xs rounded-full">TypeScript</span>
+                                <span class="px-3 py-1 bg-success/10 text-success text-xs rounded-full">Python</span>
+                                <span class="px-3 py-1 bg-success/10 text-success text-xs rounded-full">TensorFlow</span>
+                                <span class="px-3 py-1 bg-success/10 text-success text-xs rounded-full">Firebase</span>
+                                <span class="px-3 py-1 bg-success/10 text-success text-xs rounded-full">Plaid API</span>
+                            </div>
+                        </div>
+
+                        <!-- Key Metrics -->
+                        <div class="mb-6 p-4 bg-surface rounded-lg">
+                            <h4 class="text-sm font-semibold text-text-primary mb-3">Impact Metrics</h4>
+                            <div class="grid grid-cols-3 gap-4 text-center">
+                                <div>
+                                    <div class="text-lg font-bold text-success">10k+</div>
+                                    <div class="text-xs text-text-secondary">Active Users</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-accent">4.8★</div>
+                                    <div class="text-xs text-text-secondary">App Store Rating</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-warning-500">85%</div>
+                                    <div class="text-xs text-text-secondary">ML Accuracy</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Expandable Technical Details -->
+                        <div class="border-t border-secondary-200 pt-6">
+                            <button class="w-full text-left expand-btn" data-target="financeflow-details">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-semibold text-text-primary">Technical Implementation Details</span>
+                                    <svg class="w-5 h-5 text-text-secondary transform transition-transform expand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            
+                            <div class="hidden mt-4 space-y-4 expandable-content" id="financeflow-details">
+                                <div>
+                                    <h5 class="font-medium text-text-primary mb-2">ML Model Implementation</h5>
+                                    <p class="text-sm text-text-secondary leading-relaxed">
+                                        Custom TensorFlow model trained on 500k+ transaction records for spending categorization. 
+                                        Implemented federated learning approach to improve accuracy while maintaining user privacy.
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <h5 class="font-medium text-text-primary mb-2">Security Architecture</h5>
+                                    <div class="bg-primary-50 p-3 rounded text-sm font-mono text-text-primary">
+                                        <div class="text-xs text-text-secondary mb-1">// Encryption implementation</div>
+                                        <div>const encryptedData = await crypto.encrypt({</div>
+                                        <div>&nbsp;&nbsp;data: sensitiveFinancialData,</div>
+                                        <div>&nbsp;&nbsp;key: userSpecificKey,</div>
+                                        <div>&nbsp;&nbsp;algorithm: 'AES-256-GCM'</div>
+                                        <div>});</div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h5 class="font-medium text-text-primary mb-2">Performance Optimizations</h5>
+                                    <ul class="text-sm text-text-secondary space-y-1">
+                                        <li>• Implemented lazy loading for transaction history (90% faster initial load)</li>
+                                        <li>• Background sync with conflict resolution for offline-first experience</li>
+                                        <li>• Memory-efficient chart rendering for large datasets</li>
+                                    </ul>
+                                </div>
+
+                                <div class="flex gap-3 pt-2">
+                                    <a href="javascript:void(0)" class="text-accent text-sm font-medium hover:text-accent-700">
+                                        App Store →
+                                    </a>
+                                    <a href="javascript:void(0)" class="text-text-secondary text-sm hover:text-text-primary">
+                                        Technical Blog Post →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- DevTools Suite Case Study -->
+                <article class="card-interactive overflow-hidden project-item" data-category="open-source">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.pixabay.com/photos/2016/11/30/20/58/programming-1873854_1280.png" alt="DevTools Suite Interface" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4 bg-warning-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                            Open Source
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded text-sm">
+                            Ongoing • 2023-2025
+                        </div>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="mb-6">
+                            <h2 class="text-2xl font-bold text-text-primary mb-3">DevTools Suite</h2>
+                            <p class="text-text-secondary leading-relaxed">
+                                Collection of developer productivity tools including API testing, code formatting, and deployment automation used by 500+ developers worldwide.
+                            </p>
+                        </div>
+
+                        <!-- Challenge & Solution Preview -->
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold text-text-primary mb-3">Key Challenge</h3>
+                            <p class="text-text-secondary text-sm leading-relaxed">
+                                Creating cross-platform tools that integrate seamlessly with existing developer workflows while maintaining consistent UX across CLI, desktop, and web interfaces.
+                            </p>
+                        </div>
+
+                        <!-- Technology Stack -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-text-primary mb-3">Technology Stack</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-warning/10 text-warning-500 text-xs rounded-full">TypeScript</span>
+                                <span class="px-3 py-1 bg-warning/10 text-warning-500 text-xs rounded-full">Electron</span>
+                                <span class="px-3 py-1 bg-warning/10 text-warning-500 text-xs rounded-full">Node.js</span>
+                                <span class="px-3 py-1 bg-warning/10 text-warning-500 text-xs rounded-full">CLI</span>
+                                <span class="px-3 py-1 bg-warning/10 text-warning-500 text-xs rounded-full">GitHub Actions</span>
+                                <span class="px-3 py-1 bg-warning/10 text-warning-500 text-xs rounded-full">Docker</span>
+                            </div>
+                        </div>
+
+                        <!-- Key Metrics -->
+                        <div class="mb-6 p-4 bg-surface rounded-lg">
+                            <h4 class="text-sm font-semibold text-text-primary mb-3">Community Impact</h4>
+                            <div class="grid grid-cols-3 gap-4 text-center">
+                                <div>
+                                    <div class="text-lg font-bold text-warning-500">500+</div>
+                                    <div class="text-xs text-text-secondary">Active Users</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-accent">156★</div>
+                                    <div class="text-xs text-text-secondary">GitHub Stars</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-success">23</div>
+                                    <div class="text-xs text-text-secondary">Contributors</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Expandable Technical Details -->
+                        <div class="border-t border-secondary-200 pt-6">
+                            <button class="w-full text-left expand-btn" data-target="devtools-details">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-semibold text-text-primary">Technical Implementation Details</span>
+                                    <svg class="w-5 h-5 text-text-secondary transform transition-transform expand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            
+                            <div class="hidden mt-4 space-y-4 expandable-content" id="devtools-details">
+                                <div>
+                                    <h5 class="font-medium text-text-primary mb-2">Plugin Architecture</h5>
+                                    <p class="text-sm text-text-secondary leading-relaxed">
+                                        Modular plugin system allowing developers to extend functionality. Built with TypeScript for type safety and comprehensive API documentation.
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <h5 class="font-medium text-text-primary mb-2">CLI Tool Example</h5>
+                                    <div class="bg-primary-50 p-3 rounded text-sm font-mono text-text-primary">
+                                        <div class="text-xs text-text-secondary mb-1">// API testing command</div>
+                                        <div>$ devtools api test --endpoint /users</div>
+                                        <div>&nbsp;&nbsp;--method POST</div>
+                                        <div>&nbsp;&nbsp;--data user.json</div>
+                                        <div>&nbsp;&nbsp;--expect 201</div>
+                                        <div class="text-success mt-1">✓ Test passed (142ms)</div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h5 class="font-medium text-text-primary mb-2">Community Contributions</h5>
+                                    <ul class="text-sm text-text-secondary space-y-1">
+                                        <li>• 23 contributors from 12 countries</li>
+                                        <li>• Comprehensive documentation with interactive examples</li>
+                                        <li>• Weekly community calls for feature planning</li>
+                                    </ul>
+                                </div>
+
+                                <div class="flex gap-3 pt-2">
+                                    <a href="tools_innovation_lab.html" class="text-accent text-sm font-medium hover:text-accent-700">
+                                        Try Tools →
+                                    </a>
+                                    <a href="javascript:void(0)" class="text-text-secondary text-sm hover:text-text-primary">
+                                        GitHub Repository →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CloudSync API Case Study -->
+                <article class="card-interactive overflow-hidden project-item" data-category="api">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="CloudSync API Architecture Diagram" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4 bg-error text-white px-3 py-1 rounded-full text-sm font-medium">
+                            API & Backend
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded text-sm">
+                            4 months • 2024
+                        </div>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="mb-6">
+                            <h2 class="text-2xl font-bold text-text-primary mb-3">CloudSync API Platform</h2>
+                            <p class="text-text-secondary leading-relaxed">
+                                High-performance REST API handling 1M+ requests daily with real-time synchronization across multiple cloud storage providers and advanced caching strategies.
+                            </p>
+                        </div>
+
+                        <!-- Challenge & Solution Preview -->
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold text-text-primary mb-3">Key Challenge</h3>
+                            <p class="text-text-secondary text-sm leading-relaxed">
+                                Ensuring data consistency across multiple cloud providers while maintaining sub-200ms response times and handling concurrent file operations safely.
+                            </p>
+                        </div>
+
+                        <!-- Technology Stack -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-text-primary mb-3">Technology Stack</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-error/10 text-error text-xs rounded-full">Node.js</span>
+                                <span class="px-3 py-1 bg-error/10 text-error text-xs rounded-full">Express</span>
+                                <span class="px-3 py-1 bg-error/10 text-error text-xs rounded-full">MongoDB</span>
+                                <span class="px-3 py-1 bg-error/10 text-error text-xs rounded-full">Redis</span>
+                                <span class="px-3 py-1 bg-error/10 text-error text-xs rounded-full">AWS S3</span>
+                                <span class="px-3 py-1 bg-error/10 text-error text-xs rounded-full">Docker</span>
+                                <span class="px-3 py-1 bg-error/10 text-error text-xs rounded-full">Kubernetes</span>
+                            </div>
+                        </div>
+
+                        <!-- Key Metrics -->
+                        <div class="mb-6 p-4 bg-surface rounded-lg">
+                            <h4 class="text-sm font-semibold text-text-primary mb-3">Performance Metrics</h4>
+                            <div class="grid grid-cols-3 gap-4 text-center">
+                                <div>
+                                    <div class="text-lg font-bold text-error">1M+</div>
+                                    <div class="text-xs text-text-secondary">Daily Requests</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-accent">180ms</div>
+                                    <div class="text-xs text-text-secondary">Avg Response</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-bold text-success">99.95%</div>
+                                    <div class="text-xs text-text-secondary">Uptime</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Expandable Technical Details -->
+                        <div class="border-t border-secondary-200 pt-6">
+                            <button class="w-full text-left expand-btn" data-target="cloudsync-details">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-semibold text-text-primary">Technical Implementation Details</span>
+                                    <svg class="w-5 h-5 text-text-secondary transform transition-transform expand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            
+                            <div class="hidden mt-4 space-y-4 expandable-content" id="cloudsync-details">
+                                <div>
+                                    <h5 class="font-medium text-text-primary mb-2">Caching Strategy</h5>
+                                    <p class="text-sm text-text-secondary leading-relaxed">
+                                        Multi-layer caching with Redis for hot data and CDN for static assets. Implemented cache invalidation patterns for real-time consistency.
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <h5 class="font-medium text-text-primary mb-2">Rate Limiting Implementation</h5>
+                                    <div class="bg-primary-50 p-3 rounded text-sm font-mono text-text-primary">
+                                        <div class="text-xs text-text-secondary mb-1">// Sliding window rate limiter</div>
+                                        <div>const rateLimiter = rateLimit({</div>
+                                        <div>&nbsp;&nbsp;windowMs: 15 * 60 * 1000, // 15 minutes</div>
+                                        <div>&nbsp;&nbsp;max: 1000, // requests per window</div>
+                                        <div>&nbsp;&nbsp;standardHeaders: true,</div>
+                                        <div>&nbsp;&nbsp;legacyHeaders: false</div>
+                                        <div>});</div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h5 class="font-medium text-text-primary mb-2">Scalability Solutions</h5>
+                                    <ul class="text-sm text-text-secondary space-y-1">
+                                        <li>• Horizontal pod autoscaling based on CPU and memory metrics</li>
+                                        <li>• Database connection pooling with automatic failover</li>
+                                        <li>• Asynchronous job processing for heavy operations</li>
+                                    </ul>
+                                </div>
+
+                                <div class="flex gap-3 pt-2">
+                                    <a href="javascript:void(0)" class="text-accent text-sm font-medium hover:text-accent-700">
+                                        API Documentation →
+                                    </a>
+                                    <a href="javascript:void(0)" class="text-text-secondary text-sm hover:text-text-primary">
+                                        Performance Report →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-16">
+                <button class="btn-secondary" id="load-more-btn">
+                    Load More Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Projects Section -->
+    <section class="section-padding bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-text-primary mb-4">Explore More</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Discover additional projects and tools that showcase different aspects of technical expertise
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tools Lab Link -->
+                <div class="card p-6 text-center hover-lift">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Innovation Lab</h3>
+                    <p class="text-text-secondary mb-4">
+                        Interactive tools and experiments showcasing technical capabilities in action
+                    </p>
+                    <a href="tools_innovation_lab.html" class="btn-primary">Explore Tools</a>
+                </div>
+
+                <!-- Portfolio Overview -->
+                <div class="card p-6 text-center hover-lift">
+                    <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Portfolio Overview</h3>
+                    <p class="text-text-secondary mb-4">
+                        Complete professional profile with skills matrix and career journey
+                    </p>
+                    <a href="homepage_professional_portfolio_hub.html" class="btn-secondary">View Portfolio</a>
+                </div>
+
+                <!-- Contact & Collaboration -->
+                <div class="card p-6 text-center hover-lift">
+                    <div class="w-16 h-16 bg-warning/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Start a Project</h3>
+                    <p class="text-text-secondary mb-4">
+                        Ready to discuss your next project? Let's build something amazing together
+                    </p>
+                    <a href="professional_contact_collaboration.html" class="btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-800 text-white py-12">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">AC</span>
+                        </div>
+                        <span class="font-semibold text-lg">TechFolio Pro</span>
+                    </div>
+                    <p class="text-secondary-300 leading-relaxed max-w-md">
+                        Building elegant solutions for complex problems through clean code, thoughtful architecture, and user-centered design.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="homepage_professional_portfolio_hub.html" class="block text-secondary-300 hover:text-white transition-colors">Portfolio</a>
+                        <a href="tools_innovation_lab.html" class="block text-secondary-300 hover:text-white transition-colors">Tools</a>
+                        <a href="project_case_studies.html" class="block text-secondary-300 hover:text-white transition-colors">Projects</a>
+                        <a href="professional_contact_collaboration.html" class="block text-secondary-300 hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold mb-4">Get in Touch</h4>
+                    <div class="space-y-2 text-secondary-300">
+                        <div>alex.chen@techfolio.dev</div>
+                        <div>San Francisco, CA</div>
+                        <div>Available for projects</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-700 mt-8 pt-8 text-center text-secondary-300">
+                <p>&copy; 2025 TechFolio Pro. All rights reserved. Built with passion and clean code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Features -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectItems = document.querySelectorAll('.project-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-accent', 'text-white');
+                    b.classList.add('bg-secondary-100', 'text-text-secondary');
+                });
+                this.classList.add('active', 'bg-accent', 'text-white');
+                this.classList.remove('bg-secondary-100', 'text-text-secondary');
+
+                // Filter projects
+                projectItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        item.classList.add('animate-fade-in');
+                    } else {
+                        item.style.display = 'none';
+                        item.classList.remove('animate-fade-in');
+                    }
+                });
+            });
+        });
+
+        // Expandable content functionality
+        const expandBtns = document.querySelectorAll('.expand-btn');
+        
+        expandBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+                const icon = this.querySelector('.expand-icon');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    content.classList.add('animate-fade-in');
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.classList.add('hidden');
+                    content.classList.remove('animate-fade-in');
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Load more functionality (placeholder)
+        document.getElementById('load-more-btn').addEventListener('click', function() {
+            this.textContent = 'Loading...';
+            this.disabled = true;
+            
+            // Simulate loading
+            setTimeout(() => {
+                this.textContent = 'No more projects to load';
+                this.classList.add('opacity-50');
+            }, 1000);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-card');
+            } else {
+                nav.classList.remove('shadow-card');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe project items for animation
+        projectItems.forEach(item => {
+            observer.observe(item);
+        });
+    </script>
+</body>
+</html>

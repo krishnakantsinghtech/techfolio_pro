@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Modern Primary Colors - Enhanced with contemporary shades */
+  --color-primary: #1E293B; /* slate-800 */
+  --color-primary-50: #F8FAFC; /* slate-50 */
+  --color-primary-100: #F1F5F9; /* slate-100 */
+  --color-primary-200: #E2E8F0; /* slate-200 */
+  --color-primary-300: #CBD5E1; /* slate-300 */
+  --color-primary-400: #94A3B8; /* slate-400 */
+  --color-primary-500: #64748B; /* slate-500 */
+  --color-primary-600: #475569; /* slate-600 */
+  --color-primary-700: #334155; /* slate-700 */
+  --color-primary-800: #1E293B; /* slate-800 */
+  --color-primary-900: #0F172A; /* slate-900 */
+
+  /* Modern Secondary Colors - Neutral tones */
+  --color-secondary: #475569; /* slate-600 */
+  --color-secondary-50: #F8FAFC; /* slate-50 */
+  --color-secondary-100: #F1F5F9; /* slate-100 */
+  --color-secondary-200: #E2E8F0; /* slate-200 */
+  --color-secondary-300: #CBD5E1; /* slate-300 */
+  --color-secondary-400: #94A3B8; /* slate-400 */
+  --color-secondary-500: #64748B; /* slate-500 */
+  --color-secondary-600: #475569; /* slate-600 */
+  --color-secondary-700: #334155; /* slate-700 */
+  --color-secondary-800: #1E293B; /* slate-800 */
+  --color-secondary-900: #0F172A; /* slate-900 */
+
+  /* Modern Accent Colors - Contemporary blue-violet blend */
+  --color-accent: #6366F1; /* indigo-500 */
+  --color-accent-50: #EEF2FF; /* indigo-50 */
+  --color-accent-100: #E0E7FF; /* indigo-100 */
+  --color-accent-200: #C7D2FE; /* indigo-200 */
+  --color-accent-300: #A5B4FC; /* indigo-300 */
+  --color-accent-400: #818CF8; /* indigo-400 */
+  --color-accent-500: #6366F1; /* indigo-500 */
+  --color-accent-600: #4F46E5; /* indigo-600 */
+  --color-accent-700: #4338CA; /* indigo-700 */
+  --color-accent-800: #3730A3; /* indigo-800 */
+  --color-accent-900: #312E81; /* indigo-900 */
+
+  /* Modern Surface Colors - Enhanced neutrals */
+  --color-background: #FFFFFF; /* white */
+  --color-surface: #F8FAFC; /* slate-50 */
+  --color-surface-glass: rgba(255, 255, 255, 0.8); /* Glass morphism */
+  --color-surface-dark: #F1F5F9; /* slate-100 */
+
+  /* Modern Text Colors */
+  --color-text-primary: #0F172A; /* slate-900 */
+  --color-text-secondary: #64748B; /* slate-500 */
+  --color-text-tertiary: #94A3B8; /* slate-400 */
+
+  /* Enhanced Status Colors with modern shades */
+  --color-success: #22C55E; /* green-500 - More vibrant */
+  --color-success-50: #F0FDF4; /* green-50 */
+  --color-success-100: #DCFCE7; /* green-100 */
+  --color-success-200: #BBF7D0; /* green-200 */
+  --color-success-500: #22C55E; /* green-500 */
+  --color-success-600: #16A34A; /* green-600 */
+
+  --color-warning: #F59E0B; /* amber-500 - More modern */
+  --color-warning-50: #FFFBEB; /* amber-50 */
+  --color-warning-100: #FEF3C7; /* amber-100 */
+  --color-warning-200: #FDE68A; /* amber-200 */
+  --color-warning-300: #FCD34D; /* amber-300 */
+  --color-warning-500: #F59E0B; /* amber-500 */
+
+  --color-error: #EF4444; /* red-500 - Contemporary shade */
+  --color-error-50: #FEF2F2; /* red-50 */
+  --color-error-100: #FEE2E2; /* red-100 */
+  --color-error-200: #FECACA; /* red-200 */
+  --color-error-500: #EF4444; /* red-500 */
+  --color-error-600: #DC2626; /* red-600 */
+
+  /* Modern Gradient Colors */
+  --color-violet: #8B5CF6; /* violet-500 */
+  --color-violet-50: #F5F3FF; /* violet-50 */
+  --color-violet-100: #EDE9FE; /* violet-100 */
+  --color-violet-500: #8B5CF6; /* violet-500 */
+  --color-violet-600: #7C3AED; /* violet-600 */
+
+  --color-pink: #EC4899; /* pink-500 */
+  --color-pink-50: #FDF2F8; /* pink-50 */
+  --color-pink-100: #FCE7F3; /* pink-100 */
+  --color-pink-500: #EC4899; /* pink-500 */
+  --color-pink-600: #DB2777; /* pink-600 */
+
+  --color-cyan: #06B6D4; /* cyan-500 */
+  --color-cyan-50: #ECFEFF; /* cyan-50 */
+  --color-cyan-100: #CFFAFE; /* cyan-100 */
+  --color-cyan-500: #06B6D4; /* cyan-500 */
+  --color-cyan-600: #0891B2; /* cyan-600 */
+
+  /* Enhanced Shadow Variables with modern depth */
+  --shadow-subtle: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-interactive: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  --shadow-modern: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+  /* Modern Animation Variables */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-text-primary antialiased;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-inter text-text-primary;
+    line-height: 1.2;
+  }
+
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+
+  h4 {
+    @apply text-xl font-medium;
+  }
+
+  h5 {
+    @apply text-lg font-medium;
+  }
+
+  h6 {
+    @apply text-base font-medium;
+  }
+
+  p {
+    @apply text-text-secondary leading-relaxed;
+  }
+
+  code {
+    @apply font-mono bg-surface px-2 py-1 rounded text-sm;
+  }
+
+  pre {
+    @apply font-mono bg-surface p-4 rounded-lg overflow-x-auto;
+  }
+
+  a {
+    @apply text-accent hover:text-accent-700 transition-colors duration-200;
+  }
+
+  button {
+    @apply transition-all duration-200 ease-out;
+  }
+
+  input, textarea, select {
+    @apply transition-all duration-200 ease-out;
+  }
+
+  .dark {
+    color-scheme: dark;
+  }
+}
+
+@layer components {
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Section Padding */
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply bg-gradient-to-r from-accent to-accent-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-accent-600 hover:to-accent-700 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 shadow-card hover:shadow-interactive transition-all duration-300 transform hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-accent border-2 border-accent px-6 py-3 rounded-lg font-semibold hover:bg-accent hover:text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 transition-all duration-300 transform hover:-translate-y-0.5;
+  }
+
+  .btn-modern {
+    @apply bg-gradient-to-r from-violet-500 to-pink-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-violet-600 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 shadow-card hover:shadow-interactive transition-all duration-300 transform hover:-translate-y-0.5;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-xl shadow-card hover:shadow-interactive transition-all duration-300 border border-secondary-100;
+  }
+.card-interactive  {
+    @apply bg-white rounded-xl shadow-card transition-all duration-300 hover:-translate-y-2 border border-secondary-100;
+  }
+.card-glass  {
+    @apply bg-white/80 backdrop-blur-md rounded-xl border border-white/20 hover:bg-white/90 transition-all duration-300;
+  }
+
+  /* Hover Effects */
+  .hover-lift {
+    @apply hover:-translate-y-1 transition-transform duration-200;
+  }
+
+  /* Text Gradient */
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent via-violet-500 to-pink-500 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-modern {
+    @apply bg-gradient-to-r from-violet-600 via-pink-600 to-cyan-600 bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-modern {
+    @apply bg-gradient-to-br from-accent-50 via-violet-50 to-pink-50;
+  }
+
+  .bg-gradient-dark {
+    @apply bg-gradient-to-br from-primary-800 via-primary-900 to-slate-900;
+  }
+
+  /* Form elements */
+  .form-input {
+    @apply w-full px-4 py-3 border-2 border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-300 bg-white hover:border-secondary-300 transition-all duration-200;
+  }
+
+  .form-textarea {
+    @apply w-full px-4 py-3 border-2 border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-300 min-h-[120px] bg-white hover:border-secondary-300 transition-all duration-200;
+  }
+
+  /* Animation Classes */
+  .animate-fade-in {
+    @apply opacity-0 ;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+
+  .animation-delay-800 {
+    animation-delay: 800ms;
+  }
+}
+
+@layer utilities {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.4s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.3s ease-out forwards;
+  }
+
+  .animate-gradient {
+    animation: gradient-shift 3s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  /* Modern Color Utilities */
+  .bg-modern-gradient {
+    @apply bg-gradient-to-r from-accent via-violet-500 to-pink-500;
+  }
+
+  .bg-modern-light {
+    @apply bg-gradient-to-br from-white via-accent-50/50 to-violet-50/50;
+  }
+
+  .text-modern-gradient {
+    @apply bg-gradient-to-r from-accent via-violet-600 to-pink-600 bg-clip-text text-transparent;
+  }
+
+  .border-modern-gradient {
+    @apply border-2 border-transparent bg-gradient-to-r from-accent via-violet-500 to-pink-500 bg-clip-border;
+  }
+
+  /* Modern Interactive States */
+  .modern-hover {
+    @apply hover:bg-gradient-to-r hover:from-accent-50 hover:to-violet-50 hover:border-accent-300 transition-all duration-300;
+  }
+
+  .modern-focus {
+    @apply focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:outline-none;
+  }
+
+  .modern-active {
+    @apply active:scale-95 transition-transform duration-150;
+  }
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500 dark:bg-gray-500;
+}
+
+/* Selection colors */
+::selection {
+  @apply bg-accent/20 text-accent-800;
+}
+
+.dark ::selection {
+  @apply bg-accent/30 text-accent-200;
+}
+
+/* Focus styles for accessibility */
+.focus-visible {
+  @apply outline-none ring-2 ring-accent ring-offset-2 dark:ring-offset-gray-800;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  @apply transition-colors duration-300;
+}
+
+/* Image loading placeholder */
+img {
+  @apply bg-gray-200 dark:bg-gray-700;
+}
+
+/* Form elements dark mode support */
+.dark input,
+.dark textarea,
+.dark select {
+  @apply bg-gray-800 border-gray-600 text-white placeholder-gray-400;
+}
+
+.dark input:focus,
+.dark textarea:focus,
+.dark select:focus {
+  @apply border-accent ring-accent;
+}
+
+/* Modern Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #0F172A; /* slate-900 */
+    --color-surface: #1E293B; /* slate-800 */
+    --color-text-primary: #F8FAFC; /* slate-50 */
+    --color-text-secondary: #94A3B8; /* slate-400 */
+  }
+}
+
+/* Modern Responsive Enhancements */
+@media (max-width: 768px) {
+  .card-interactive {
+    @apply hover:translate-y-0; /* Disable lift on mobile for better touch experience */
+  }
+}
+
+/* Modern Print Styles */
+@media print {
+  .modern-glow,
+  .card-interactive {
+    @apply shadow-none;
+  }
+}
